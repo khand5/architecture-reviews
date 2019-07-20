@@ -1,0 +1,12 @@
+.Clock-container {
+  background-color: turquoise;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: teal;
+  width: 10em;
+}
+
+.Clock-title {
+  margin: 0;
+  font-size: 0.7em;
+}
