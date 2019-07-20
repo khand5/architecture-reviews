@@ -1,0 +1,22 @@
+.Panel-container {
+  background-color: turquoise;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: teal;
+  /* background-color: #790909; */
+  width: auto;
+  height: auto;
+  padding: 0 0.5em 0.5em 0.5em;
+  margin: 0;
+}
+
+.Panel-title {
+  align-content: flex-start;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.Panel-username-label {
+  font-size: 0.8em;
+  margin: 0;
+}
