@@ -1,0 +1,15 @@
+.Navbar-container {
+  display: flex;
+  width: 90vw;
+}
+
+.Navbar-item-left {
+  /* margin-left: 1vw; */
+  align-self: flex-start;
+}
+
+.Navbar-item-right {
+  margin-left: auto;
+  /* margin-right: 1vw; */
+  align-self: flex-end;
+}
