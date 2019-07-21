@@ -1,12 +1,16 @@
+:root {
+  /* background: rgb(240, 217, 181); */
+  background: rgb(240, 217, 181);
+  background: linear-gradient(
+    200deg,
+    rgba(240, 217, 181, 1) 0%,
+    rgb(177, 136, 99) 100%
+  );
+}
+
 .App {
   text-align: center;
   min-height: 100vh;
-  background: rgb(36, 0, 75);
-  background: linear-gradient(
-    200deg,
-    rgba(36, 0, 75, 1) 0%,
-    rgba(121, 9, 9, 1) 100%
-  );
 }
 
 .App-logo {
@@ -24,15 +28,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 1em 0 1em 0;
 }
 
 .App-body {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  margin: 2em;
 }
 
 .App-footer {
+  background-color: #282c34;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 1em 0 1em 0;
 }
 
 .App-link {
