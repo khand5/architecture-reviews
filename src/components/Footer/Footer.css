@@ -1,0 +1,29 @@
+.Footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: black;
+  margin: 0 1em 0 1em;
+}
+
+.Footer-item {
+  color: rgb(240, 217, 181);
+  text-align: left;
+  margin: 0;
+  padding: 0 1em 0 1em;
+}
+
+.Footer-item:hover {
+  text-decoration: underline;
+}
+
+.Footer-item-left {
+  /* margin-left: 1vw; */
+  align-self: flex-start;
+}
+
+.Footer-item-right {
+  margin-left: auto;
+  /* margin-right: 1vw; */
+  align-self: flex-end;
+}
