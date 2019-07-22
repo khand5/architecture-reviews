@@ -20,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34;
   min-height: 5vh;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin: 1em;
+  margin: 1em; */
 }
 
 .App-body {

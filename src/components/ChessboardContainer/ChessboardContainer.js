@@ -167,7 +167,7 @@ export default function ChessboardContainer() {
         }) => (
           <Chessboard
             id="humanVsHuman"
-            width={500}
+            width={500  }
             position={position}
             onDrop={onDrop}
             onMouseOverSquare={onMouseOverSquare}

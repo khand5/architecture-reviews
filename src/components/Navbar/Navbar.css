@@ -1,0 +1,30 @@
+.Navbar-container {
+  display: flex;
+  /* background-color: #282c34; */
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  margin: 0 1em 0 1em;
+}
+
+.Navbar-item {
+  color: rgb(181, 136, 99);
+  background-color: beige;
+  padding: 1em;
+  font-size: 0.8em;
+}
+
+.Navbar-item:hover {
+  text-decoration: underline;
+}
+
+.Navbar-item-left {
+  /* margin-left: 1vw; */
+  align-self: flex-start;
+}
+
+.Navbar-item-right {
+  margin-left: auto;
+  /* margin-right: 1vw; */
+  align-self: flex-end;
+}
