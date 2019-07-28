@@ -10,7 +10,6 @@ class ProfilePanel extends React.Component {
   render() {
     return (
       <div className="ProfilePanel-container">
-        {" "}
         <p className="ProfilePanel-title">Profile Panel</p>
         <p className="ProfilePanel-item">Username: _Alchemist</p>
         <p className="ProfilePanel-item">Status: _Offline</p>
