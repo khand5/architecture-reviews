@@ -3,6 +3,7 @@ import "./App.css";
 
 import Clock from "./components/Clock/Clock";
 import LoginPanel from "./components/Panels/Login/LoginPanel";
+import ProfilePanel from "./components/Panels/ProfilePanel/ProfilePanel";
 import ChessboardContainer from "./components/ChessboardContainer/ChessboardContainer";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -12,10 +13,10 @@ function App() {
     <div className="App">
       <Navbar />
       <body className="App-body">
-        {" "}
-        {/* <Clock /> */}
-        <ChessboardContainer />
-        {/* <LoginPanel /> */}
+        <ProfilePanel />
+        <Clock />
+        {/* <ChessboardContainer /> */}
+        <LoginPanel />
       </body>
       <Footer />
     </div>

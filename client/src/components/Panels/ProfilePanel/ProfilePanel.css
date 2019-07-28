@@ -1,0 +1,16 @@
+.ProfilePanel-container {
+  background-color: turquoise;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: teal;
+  width: 10em;
+}
+
+.ProfilePanel-item {
+}
+
+.ProfilePanel-title {
+  align-content: flex-start;
+  font-size: 0.8em;
+  margin: 0;
+}
