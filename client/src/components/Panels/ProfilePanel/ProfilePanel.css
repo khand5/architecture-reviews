@@ -6,11 +6,12 @@
   width: 10em;
 }
 
-.ProfilePanel-item {
-}
-
 .ProfilePanel-title {
   align-content: flex-start;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.ProfilePanel-item {
   margin: 0;
 }
