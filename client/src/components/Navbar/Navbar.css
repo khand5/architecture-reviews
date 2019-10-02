@@ -18,22 +18,23 @@
 
 .Navbar-item {
   color: rgb(181, 136, 99);
-  background-color: beige;
   padding: 15px;
   font-size: 0.8em;
-}
-
-.Hover-highlight-border-bottom {
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
-  -webkit-transition: border-color 0.25s; /* For Safari 3.1 to 6.0 */
-  transition: border-color 0.25s;
 }
 
 .Navbar-item:hover {
   background-color: rgb(182, 182, 182);
   border-color: rgb(181, 136, 99);
+}
+
+.Hover {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  -webkit-transition: background-color 0.25s; /* For Safari 3.1 to 6.0 */
+  -webkit-transition: border-color 0.25s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.25s;
+  transition: border-color 0.25s;
 }
 
 .Navbar-item-left {
@@ -54,12 +55,16 @@
   border: none;
   font-size: 0.8em;
   padding-left: 1em;
-  width: 15em;
 }
 .Navbar-item-search-button {
-  width: 1.5em;
-  padding-top: 0.55em;
+  width: 2em;
+  padding-top: 0.45em;
   background: burlywood;
+}
+
+.Navbar-item-search-button:visited {
+  text-decoration: none;
+  color: rgb(184, 163, 146);
 }
 
 .Navbar-item-search:hover {
@@ -71,6 +76,16 @@
 .Navbar-item-search-button:focus {
   outline: none;
 }
+
+.Navbar-item-select {
+  padding-left: 1em;
+  border: none;
+  display: flex;
+  margin-left: 1em;
+  min-height: 52px;
+}
+
+/* Animations */
 
 /* Safari syntax */
 @-webkit-keyframes fadeIn {
