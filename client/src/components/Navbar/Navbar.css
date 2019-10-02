@@ -1,30 +1,93 @@
+.Navbar {
+  margin: 1em 1em 0 1em;
+}
+
+.Navbar-title {
+  color: rgb(181, 136, 99);
+  padding: 1em;
+  background-color: white;
+}
+
 .Navbar-container {
   display: flex;
-  /* background-color: #282c34; */
   align-items: center;
   justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
-  margin: 0 1em 0 1em;
+  background-color: beige;
 }
 
 .Navbar-item {
   color: rgb(181, 136, 99);
   background-color: beige;
-  padding: 1em;
+  padding: 15px;
   font-size: 0.8em;
 }
 
+.Hover-highlight-border-bottom {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  -webkit-transition: border-color 0.25s; /* For Safari 3.1 to 6.0 */
+  transition: border-color 0.25s;
+}
+
 .Navbar-item:hover {
-  text-decoration: underline;
+  background-color: rgb(182, 182, 182);
+  border-color: rgb(181, 136, 99);
 }
 
 .Navbar-item-left {
-  /* margin-left: 1vw; */
   align-self: flex-start;
 }
 
 .Navbar-item-right {
   margin-left: auto;
-  /* margin-right: 1vw; */
   align-self: flex-end;
+}
+
+.Navbar-item-search {
+  display: flex;
+  margin-left: 1em;
+  min-height: 52px;
+}
+.Navbar-item-search-bar {
+  border: none;
+  font-size: 0.8em;
+  padding-left: 1em;
+  width: 15em;
+}
+.Navbar-item-search-button {
+  width: 1.5em;
+  padding-top: 0.55em;
+  background: burlywood;
+}
+
+.Navbar-item-search:hover {
+  background-color: rgb(182, 182, 182);
+  border-color: rgb(181, 136, 99);
+}
+
+.Navbar-item-search-bar:focus,
+.Navbar-item-search-button:focus {
+  outline: none;
+}
+
+/* Safari syntax */
+@-webkit-keyframes fadeIn {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: black;
+  }
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: black;
+  }
 }

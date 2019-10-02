@@ -11,10 +11,34 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="Navbar-container">
-        <div className="Navbar-item Navbar-item-left">Company</div>
-        <div className="Navbar-item Navbar-item-left">Highscores</div>
-        <div className="Navbar-item Navbar-item-right">Login</div>
+      <div className="Navbar">
+        <div className="Navbar-title">
+          <h1>Global Architecture Reviews</h1>
+        </div>
+        <div className="Navbar-container">
+          <div className="Navbar-item Navbar-item-left Hover-highlight-border-bottom">
+            Secular
+          </div>
+          <div className="Navbar-item Navbar-item-left Hover-highlight-border-bottom">
+            Religious
+          </div>
+          <div className="Navbar-item Navbar-item-left Hover-highlight-border-bottom">
+            Traditional
+          </div>
+
+          <div className="Navbar-item-search Hover-highlight-border-bottom">
+            <input
+              type="text"
+              className="Navbar-item-search-bar"
+              placeholder="Search.."
+            ></input>
+            <i className="Navbar-item-search-button fa fa-search"></i>
+          </div>
+
+          <div className="Navbar-item Navbar-item-right Hover-highlight-border-bottom">
+            Login
+          </div>
+        </div>
       </div>
     );
   }
