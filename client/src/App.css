@@ -1,5 +1,4 @@
 :root {
-  /* background: rgb(240, 217, 181); */
   background: rgb(240, 217, 181);
   background: linear-gradient(
     200deg,
@@ -13,12 +12,6 @@
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 10vmin;
-  pointer-events: none;
 }
 
 /* .App-header {
@@ -37,8 +30,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin: 1em;
-  height: 75vh;
+  margin: 0 1em 0 1em;
 }
 
 /* .App-footer {
@@ -52,16 +44,3 @@
   color: white;
   margin: 1em;
 } */
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

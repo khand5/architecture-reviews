@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import logo from "./logo.svg";
 
 class Footer extends React.Component {
   constructor(props) {
@@ -9,20 +10,29 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <div className="Footer-container">
-        <div className="Footer-item-left">
-          <p className="Footer-item">Browswer: </p>
-          <p className="Footer-item">Time:</p>
-          <p className="Footer-item">Statistic:</p>
+      <div className="Footer">
+        <div className="Footer-container">
+          <div className="Footer-item-left">
+            <p className="Footer-item">Contact </p>
+            <p className="Footer-item">Terms & Conditions</p>
+            <p className="Footer-item">Privacy Policy</p>
+            <div className="Footer-container">
+              <i className="Footer-item fa fa-instagram"></i>
+              <i className="Footer-item Footer-item-left fa fa-twitter"></i>
+              <i className="Footer-item Footer-item-left fa fa-facebook"></i>
+              <i className="Footer-item Footer-item-left fa fa-linkedin"></i>
+              <i className="Footer-item Footer-item-left fa fa-youtube"></i>
+            </div>
+          </div>
+          <div className="Footer-item-right">
+            <p className="Footer-item">1280 Main Street West</p>
+            <p className="Footer-item">Hamilton, Ontario, L8S 4L8 </p>
+            <p className="Footer-item">(905)525-9140 </p>
+          </div>
         </div>
-        <div className="Footer-item-left">
-          <p className="Footer-item">Footer Item 1</p>
-          <p className="Footer-item">Footer Item 2</p>
-        </div>
-        <div className="Footer-item-right">
-          <p className="Footer-item">Footer Item 3</p>
-          <p className="Footer-item">Another Footer Item</p>
-          <p className="Footer-item">Copyright @ LionSide Project</p>
+        <div className="Footer-logo">
+          <i className="Footer-logo-icon fa fa-fire"></i>
+          <p className="Footer-logo-caption">©2019 DANISH KHAN</p>
         </div>
       </div>
     );
