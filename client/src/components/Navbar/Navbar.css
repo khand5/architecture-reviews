@@ -46,17 +46,18 @@
 .Navbar-item-search {
   display: flex;
   margin-left: 1em;
-  height: inherit;
 }
 .Navbar-item-search-bar {
   border: none;
   font-size: 0.8em;
   padding-left: 1em;
+  background-color: rgb(255, 255, 255);
 }
 .Navbar-item-search-button {
-  width: 2em;
-  padding-top: 0.45em;
+  width: 1.5em;
+  align-self: stretch;
   background: burlywood;
+  height: 1.3em;
 }
 
 .Navbar-item-search-button:visited {
@@ -74,12 +75,42 @@
   outline: none;
 }
 
-.Navbar-item-select {
-  padding-left: 1em;
+.Navbar-item-select-menu:focus {
+  outline: none;
+}
+
+.Navbar-item-dropdown {
+  /* position: relative; */
+}
+.Navbar-item-dropdown-button {
   border: none;
-  display: flex;
-  margin-left: 1em;
-  min-height: 52px;
+  color: rgb(181, 136, 99);
+  padding: 15px;
+  font-size: 0.8em;
+  outline: none;
+}
+.navbar-item-dropdown-button:focus {
+  outline: none;
+}
+.Navbar-item-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(181, 136, 99);
+  z-index: 1;
+  min-width: 8em;
+}
+.Navbar-item-dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.Navbar-item-dropdown-content a:hover {
+  background-color: antiquewhite;
+}
+
+.Navbar-item-dropdown:hover .Navbar-item-dropdown-content {
+  display: block;
 }
 
 /* Animations */

@@ -1,6 +1,7 @@
 .Footer {
   color: rgb(240, 217, 181);
   background: rgb(168, 164, 164);
+  padding-top: 10px;
 }
 
 .Footer-container {
@@ -8,30 +9,35 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding-bottom: 1em;
 }
 
 .Footer-item {
   text-align: left;
+  padding: 0 0 0.5em 0;
 }
 
 .Footer-item-left {
   align-self: flex-start;
-  padding-left: 2em;
+  padding-left: 1em;
+}
+
+p {
+  margin: 0;
 }
 
 .Footer-item-right {
   margin-left: auto;
   align-self: flex-end;
-  padding-right: 2em;
+  padding-right: 1em;
 }
 
 .Footer-logo-icon {
-  padding: 10px 0 0 0;
-  font-size: 4em;
+  font-size: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .Footer-logo-caption {
-  padding: 0;
-  font-size: 0.8em;
+  padding: 0.5em 0 0 0;
+  font-size: 0.9em;
 }

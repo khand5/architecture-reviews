@@ -11,6 +11,21 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="Footer">
+        <div className="Footer-logo">
+          <i className="Footer-logo-icon fa fa-cogs"></i>
+          <i className="Footer-logo-icon fa fa-globe"></i>
+          <i className="Footer-logo-icon fa fa-briefcase"></i>
+          <i className="Footer-logo-icon fa fa-flask"></i>
+          <i className="Footer-logo-icon fa fa-magic"></i>
+          <i className="Footer-logo-icon fa fa-bolt"></i>
+          <i className="Footer-logo-icon fa fa-sitemap"></i>
+          <i className="Footer-logo-icon fa fa-male"></i>
+          <i className="Footer-logo-icon fa fa-snowflake-o"></i>
+
+          <i className="Footer-logo-icon fa fa-rebel"></i>
+          <i className="Footer-logo-icon fa fa-empire"></i>
+          <p className="Footer-logo-caption">©2019 DANISH KHAN</p>
+        </div>
         <div className="Footer-container">
           <div className="Footer-item-left">
             <p className="Footer-item">Contact </p>
@@ -25,14 +40,11 @@ class Footer extends React.Component {
             </div>
           </div>
           <div className="Footer-item-right">
+            <p className="Footer-item">Department of Computing & Software</p>
             <p className="Footer-item">1280 Main Street West</p>
             <p className="Footer-item">Hamilton, Ontario, L8S 4L8 </p>
             <p className="Footer-item">(905)525-9140 </p>
           </div>
-        </div>
-        <div className="Footer-logo">
-          <i className="Footer-logo-icon fa fa-fire"></i>
-          <p className="Footer-logo-caption">©2019 DANISH KHAN</p>
         </div>
       </div>
     );
