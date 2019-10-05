@@ -111,14 +111,13 @@
 
 @media only screen and (max-width: 600px) {
   .ProfilePanel-userrewviews-review {
-    display: flex;
-    flex-wrap: wrap;
     max-width: 100%;
-    background-color: blanchedalmond;
-    border-radius: 10px;
-    border-width: 0 0 0 3px;
-    padding: 10px;
-    margin: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ProfilePanel-userrewviews-review {
+    max-width: 30%;
   }
 }
 

@@ -1,7 +1,6 @@
 import React from "react";
 import "./ObjectPanel.css";
-import cathedral from "./cathedral.jpg";
-import cathedral2 from "./cathedral2.jpeg";
+import cathedral from "./cathedral.jpeg";
 
 class ObjectPanel extends React.Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class ObjectPanel extends React.Component {
         <div className="ProfilePanel-imagecontainer">
           <img
             className="ProfilePanel-image"
-            src={cathedral2}
+            src={cathedral}
             alt="Image of Cathedral"
           ></img>
         </div>
@@ -146,6 +145,156 @@ class ObjectPanel extends React.Component {
             </div>
           </div>
 
+          <div className="ProfilePanel-userrewviews-review">
+            <div className="ProfilePanel-userreview-title">
+              <h3>Object Name: Another Perspective</h3>
+            </div>
+            <div className="ProfilePanel-userreview-metadata">
+              <p>Last Updated: September 1st, 2019</p>
+              <p>219,291 views</p>
+              <p>
+                <i className="fa fa-thumbs-up"></i> 9,231
+              </p>
+              <p>
+                <i className="fa fa-thumbs-down"></i> 11
+              </p>
+              <p>
+                <i className="fa fa-heart"></i> 1,231
+              </p>
+            </div>
+            <p className="ProfilePanel-userreview-comment">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
+              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
+              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
+              ullamcorper elit lacinia. In hac habitasse platea dictumst.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Suspendisse et volutpat augue.
+            </p>
+
+            <div className="ProfilePanel-userreviews-interactive">
+              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
+              <div className="ProfilePanel-userreview-username">
+                Submitted by: Junhao Wang
+              </div>
+            </div>
+          </div>
+
+          <div className="ProfilePanel-userrewviews-review">
+            <div className="ProfilePanel-userreview-title">
+              <h3>Object Name: Another Perspective</h3>
+            </div>
+            <div className="ProfilePanel-userreview-metadata">
+              <p>Last Updated: September 1st, 2019</p>
+              <p>219,291 views</p>
+              <p>
+                <i className="fa fa-thumbs-up"></i> 9,231
+              </p>
+              <p>
+                <i className="fa fa-thumbs-down"></i> 11
+              </p>
+              <p>
+                <i className="fa fa-heart"></i> 1,231
+              </p>
+            </div>
+            <p className="ProfilePanel-userreview-comment">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
+              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
+              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
+              ullamcorper elit lacinia. In hac habitasse platea dictumst.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Suspendisse et volutpat augue.
+            </p>
+
+            <div className="ProfilePanel-userreviews-interactive">
+              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
+              <div className="ProfilePanel-userreview-username">
+                Submitted by: Junhao Wang
+              </div>
+            </div>
+          </div>
+
+          <div className="ProfilePanel-userrewviews-review">
+            <div className="ProfilePanel-userreview-title">
+              <h3>Object Name: Another Perspective</h3>
+            </div>
+            <div className="ProfilePanel-userreview-metadata">
+              <p>Last Updated: September 1st, 2019</p>
+              <p>219,291 views</p>
+              <p>
+                <i className="fa fa-thumbs-up"></i> 9,231
+              </p>
+              <p>
+                <i className="fa fa-thumbs-down"></i> 11
+              </p>
+              <p>
+                <i className="fa fa-heart"></i> 1,231
+              </p>
+            </div>
+            <p className="ProfilePanel-userreview-comment">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
+              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
+              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
+              ullamcorper elit lacinia. In hac habitasse platea dictumst.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Suspendisse et volutpat augue.
+            </p>
+
+            <div className="ProfilePanel-userreviews-interactive">
+              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
+              <div className="ProfilePanel-userreview-username">
+                Submitted by: Junhao Wang
+              </div>
+            </div>
+          </div>
+          <div className="ProfilePanel-userrewviews-review">
+            <div className="ProfilePanel-userreview-title">
+              <h3>Object Name: Another Perspective</h3>
+            </div>
+            <div className="ProfilePanel-userreview-metadata">
+              <p>Last Updated: September 1st, 2019</p>
+              <p>219,291 views</p>
+              <p>
+                <i className="fa fa-thumbs-up"></i> 9,231
+              </p>
+              <p>
+                <i className="fa fa-thumbs-down"></i> 11
+              </p>
+              <p>
+                <i className="fa fa-heart"></i> 1,231
+              </p>
+            </div>
+            <p className="ProfilePanel-userreview-comment">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
+              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
+              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
+              ullamcorper elit lacinia. In hac habitasse platea dictumst.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Suspendisse et volutpat augue.
+            </p>
+
+            <div className="ProfilePanel-userreviews-interactive">
+              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
+              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
+              <div className="ProfilePanel-userreview-username">
+                Submitted by: Junhao Wang
+              </div>
+            </div>
+          </div>
           <div className="ProfilePanel-userrewviews-review">
             <div className="ProfilePanel-userreview-title">
               <h3>Object Name: Another Perspective</h3>
