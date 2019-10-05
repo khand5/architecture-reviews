@@ -23,7 +23,7 @@ class Header extends React.Component {
             <div class="Navbar-item-dropdown-button">
               Categories <i className="fa fa-angle-down"></i>
             </div>
-            <div class="Navbar-item-dropdown-content">
+            <div class="Navbar-item-dropdown-content Hover">
               <a href=""> ★ ★ ★ ★ ★</a>
               <a href=""> ★ ★ ★ ★</a>
               <a href=""> ★ ★ ★</a>

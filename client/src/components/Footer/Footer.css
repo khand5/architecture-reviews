@@ -9,11 +9,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  padding-top: 1em;
 }
 
 .Footer-item {
   text-align: left;
-  padding: 0 0 0.5em 0;
+  padding: 0 1.5em 0.5em 0;
 }
 
 .Footer-item-left {

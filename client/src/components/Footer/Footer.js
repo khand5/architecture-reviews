@@ -24,26 +24,28 @@ class Footer extends React.Component {
 
           <i className="Footer-logo-icon fa fa-rebel"></i>
           <i className="Footer-logo-icon fa fa-empire"></i>
-          <p className="Footer-logo-caption">©2019 DANISH KHAN</p>
+          <p className="Footer-logo-caption">
+            ©2019 Department of Computing & Software
+          </p>
         </div>
         <div className="Footer-container">
           <div className="Footer-item-left">
             <p className="Footer-item">Contact </p>
             <p className="Footer-item">Terms & Conditions</p>
             <p className="Footer-item">Privacy Policy</p>
-            <div className="Footer-container">
-              <i className="Footer-item fa fa-instagram"></i>
-              <i className="Footer-item Footer-item-left fa fa-twitter"></i>
-              <i className="Footer-item Footer-item-left fa fa-facebook"></i>
-              <i className="Footer-item Footer-item-left fa fa-linkedin"></i>
-              <i className="Footer-item Footer-item-left fa fa-youtube"></i>
-            </div>
+          </div>
+          <div className="Footer-item-left">
+            <p className="Footer-item">Social Media Links:</p>
+            <i className="Footer-item fa fa-instagram"></i>
+            <i className="Footer-item fa fa-twitter"></i>
+            <i className="Footer-item fa fa-facebook"></i>
+            <i className="Footer-item fa fa-linkedin"></i>
+            <i className="Footer-item fa fa-youtube"></i>
           </div>
           <div className="Footer-item-right">
             <p className="Footer-item">Department of Computing & Software</p>
             <p className="Footer-item">1280 Main Street West</p>
             <p className="Footer-item">Hamilton, Ontario, L8S 4L8 </p>
-            <p className="Footer-item">(905)525-9140 </p>
           </div>
         </div>
       </div>

@@ -5,12 +5,14 @@ import "font-awesome/css/font-awesome.min.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Object from "./components/Object/Object";
-import SearchPanel from "./components/Panels/Search/SearchPanel";
+import ObjectPanel from "./components/Panels/ObjectPanel/ObjectPanel";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+
+      <ObjectPanel />
 
       {/* <SearchPanel /> */}
 
