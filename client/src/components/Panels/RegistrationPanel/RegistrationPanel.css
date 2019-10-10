@@ -1,0 +1,29 @@
+.RegistrationPanel-container {
+  background-color: rgb(231, 215, 171);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: rgb(126, 106, 81);
+  width: auto;
+  height: 100vh;
+  padding: 0 0.5em 0.5em 0.5em;
+  margin: 0;
+}
+
+.RegistrationPanel-title {
+  align-content: flex-start;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.RegistrationPanel-label {
+  margin: 0;
+}
+
+.RegistrationPanel-highlightedbox {
+  background-color: bisque;
+  margin: 5px 0;
+}
+
+.checkbox .radiobox {
+  padding: 10px 0;
+}

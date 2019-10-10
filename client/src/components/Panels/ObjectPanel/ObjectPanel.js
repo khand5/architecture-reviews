@@ -24,7 +24,7 @@ class ObjectPanel extends React.Component {
               width="100%"
               height="20%"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?q=McMaster%20University&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Caterbury%20Cathedral&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
             ></iframe>
@@ -35,7 +35,7 @@ class ObjectPanel extends React.Component {
         <div className="ProfilePanel-data-container">
           <div className="ProfilePanel-title">
             <div>
-              <h1>Object Name: A Lorem Ipsum Architecture Review</h1>
+              <h1>Canterbury Cathedral: A Lorem Ipsum Architecture Review</h1>
             </div>
           </div>
           <div className="ProfilePanel-metadata">
