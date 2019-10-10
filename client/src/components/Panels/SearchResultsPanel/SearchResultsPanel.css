@@ -1,0 +1,93 @@
+.SearchResultsPanel-container {
+  display: block;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.SearchResultsPanel-results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.SearchResultsPanel-imagecontainer {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 10px 0;
+  background-image: url("../ObjectPanel/cathedral.jpeg");
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (min-width: 600px) {
+  .SearchResultsPanel-imagecontainer {
+    width: 50%;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .SearchResultsPanel-imagecontainer {
+    width: 33%;
+    margin: 10px 0;
+  }
+}
+
+.SearchResultsPanel-image-position {
+  position: absolute;
+  top: 8px;
+  color: black;
+  width: 40px;
+  background-color: bisque;
+  padding: 0 1em;
+}
+.SearchResultsPanel-image-title {
+  font-size: 1.5em;
+  position: absolute;
+  top: 1em;
+  left: px;
+  color: black;
+  padding: 0 1em;
+  background-color: burlywood;
+}
+
+.SearchResultsPanel-image-description {
+  position: absolute;
+  top: 3.5em;
+  left: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.SearchResultsPanel-image-rating {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.SearchResultsPanel-image-average {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+
+.SearchResultsPanel-gmapcontainer {
+  position: relative;
+  text-align: right;
+  height: 20%;
+  width: 100%;
+}
+.SearchResultsPanel-gmapcanvas {
+  overflow: hidden;
+  background: none !important;
+  height: 20%;
+  width: 100%;
+}
+
+.SearchResultsPanel-title {
+  align-content: flex-start;
+  font-size: 0.7em;
+  margin: 0;
+}

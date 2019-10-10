@@ -8,6 +8,7 @@ import LoginPanel from "./components/Panels/LoginPanel/LoginPanel";
 import ObjectPanel from "./components/Panels/ObjectPanel/ObjectPanel";
 import RegistrationPanel from "./components/Panels/RegistrationPanel/RegistrationPanel";
 import ObjSubmissionPanel from "./components/Panels/ObjSubmissionPanel/ObjSubmissionPanel";
+import SearchResultsPanel from "./components/Panels/SearchResultsPanel/SearchResultsPanel";
 
 function App() {
   return (
@@ -16,21 +17,15 @@ function App() {
 
       {/* <LoginPanel /> */}
 
-      <RegistrationPanel />
+      {/* <RegistrationPanel /> */}
 
       {/* <ObjSubmissionPanel /> */}
 
       {/* <ObjectPanel /> */}
 
-      {/* <body className="App-body">
-        <Object />
-        <Object />
-        <Object />
-        <Object />
-        <Object />
-        <Object />
-        <Object />
-      </body> */}
+      <SearchResultsPanel />
+
+      <body className="App-body"></body>
       <Footer />
     </div>
   );
