@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import LoginPanel from "./components/Panels/LoginPanel/LoginPanel";
 import ObjectPanel from "./components/Panels/ObjectPanel/ObjectPanel";
 import RegistrationPanel from "./components/Panels/RegistrationPanel/RegistrationPanel";
+import ObjSubmissionPanel from "./components/Panels/ObjSubmissionPanel/ObjSubmissionPanel";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       {/* <LoginPanel /> */}
 
       <RegistrationPanel />
+
+      {/* <ObjSubmissionPanel /> */}
 
       {/* <ObjectPanel /> */}
 

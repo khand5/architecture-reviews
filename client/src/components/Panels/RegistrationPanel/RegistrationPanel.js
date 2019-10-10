@@ -9,7 +9,7 @@ class RegistrationPanel extends React.Component {
 
   render() {
     return (
-      <div class="RegistrationPanel-container">
+      <div className="RegistrationPanel-container">
         <form action="">
           <p className="RegistrationPanel-title">New User Registration Form:</p>
           <p className="RegistrationPanel-label">Username:</p>

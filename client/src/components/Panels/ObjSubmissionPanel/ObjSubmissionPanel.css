@@ -1,4 +1,4 @@
-.RegistrationPanel-container {
+.ObjSubmissionPanel-container {
   display: block;
   width: 100%;
   margin: 0em;
@@ -8,24 +8,24 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .RegistrationPanel-container {
+  .ObjSubmissionPanel-container {
     width: 50%;
     margin: 1em auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
-.RegistrationPanel-title {
+.ObjSubmissionPanel-title {
   align-content: flex-start;
   font-size: 0.7em;
   margin: 0;
 }
 
-.RegistrationPanel-label {
+.ObjSubmissionPanel-label {
   margin: 0;
 }
 
-.RegistrationPanel-highlightedbox {
+.ObjSubmissionPanel-highlightedbox {
   background-color: bisque;
   margin: 5px 0;
 }
