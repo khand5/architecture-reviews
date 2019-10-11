@@ -40,7 +40,7 @@ class SearchResultsPanel extends React.Component {
             </div>
             <div className="SearchResultsPanel-image-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...(more)
+              metus placerat, ullamcorper lectus mollis, bibendum leo...
             </div>
             <div className="SearchResultsPanel-image-rating">
               Category: ★★★★
@@ -60,7 +60,7 @@ class SearchResultsPanel extends React.Component {
             </div>
             <div className="SearchResultsPanel-image-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...(more)
+              metus placerat, ullamcorper lectus mollis, bibendum leo...
             </div>
             <div className="SearchResultsPanel-image-rating">
               Category: ★★★★
@@ -80,7 +80,7 @@ class SearchResultsPanel extends React.Component {
             </div>
             <div className="SearchResultsPanel-image-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...(more)
+              metus placerat, ullamcorper lectus mollis, bibendum leo...
             </div>
             <div className="SearchResultsPanel-image-rating">
               Category: ★★★★
@@ -100,7 +100,7 @@ class SearchResultsPanel extends React.Component {
             </div>
             <div className="SearchResultsPanel-image-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...(more)
+              metus placerat, ullamcorper lectus mollis, bibendum leo...
             </div>
             <div className="SearchResultsPanel-image-rating">
               Category: ★★★★
@@ -120,7 +120,7 @@ class SearchResultsPanel extends React.Component {
             </div>
             <div className="SearchResultsPanel-image-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...(more)
+              metus placerat, ullamcorper lectus mollis, bibendum leo...
             </div>
             <div className="SearchResultsPanel-image-rating">
               Category: ★★★★
@@ -140,7 +140,7 @@ class SearchResultsPanel extends React.Component {
             </div>
             <div className="SearchResultsPanel-image-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...(more)
+              metus placerat, ullamcorper lectus mollis, bibendum leo...
             </div>
             <div className="SearchResultsPanel-image-rating">
               Category: ★★★★

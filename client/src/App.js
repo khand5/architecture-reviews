@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
+import { NavLink, Router, Route } from "react-router-dom";
+import rootStore from "./stores/RootStore";
+import { Provider } from "mobx-react";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -13,20 +16,50 @@ import SearchResultsPanel from "./components/Panels/SearchResultsPanel/SearchRes
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Provider rootStore={rootStore}>
+        <Router history={rootStore.history}>
+          <Navbar />
 
-      {/* <LoginPanel /> */}
+          <Route path="/login" component={LoginPanel} />
+          <Route path="/searchform" component={ObjectPanel} />
+          <Route path="/sampleresultspage" component={SearchResultsPanel} />
+          <Route path="/sampleindividualobjectpage" component={ObjectPanel} />
+          <Route path="/objectsubmissionpage" component={ObjSubmissionPanel} />
+          <Route path="/userregistration" component={RegistrationPanel} />
 
-      {/* <RegistrationPanel /> */}
+          <NavLink to="/login">
+            [login] <br></br>
+          </NavLink>
+          <NavLink to="/sampleresultspage">
+            [searchform **Note: see navbar] <br></br>
+          </NavLink>
+          <NavLink to="/sampleresultspage">
+            [sample-results-page] <br></br>
+          </NavLink>
+          <NavLink to="/sampleindividualobjectpage">
+            [sample-individual-object-page]<br></br>
+          </NavLink>
+          <NavLink to="/objectsubmissionpage">
+            [object-submission-page]<br></br>
+          </NavLink>
+          <NavLink to="/userregistration">
+            [user-registration]<br></br>
+          </NavLink>
 
-      {/* <ObjSubmissionPanel /> */}
+          {/* <LoginPanel /> */}
 
-      {/* <ObjectPanel /> */}
+          {/* <RegistrationPanel /> */}
 
-      <SearchResultsPanel />
+          {/* <ObjSubmissionPanel /> */}
 
-      <body className="App-body"></body>
-      <Footer />
+          {/* <ObjectPanel /> */}
+
+          {/* <SearchResultsPanel /> */}
+
+          <body className="App-body"></body>
+          <Footer />
+        </Router>
+      </Provider>
     </div>
   );
 }

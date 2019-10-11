@@ -21,6 +21,12 @@
   background-image: url("../ObjectPanel/cathedral.jpeg");
 }
 
+@media screen and (max-width: 600px) {
+  .SearchResultsPanel-container {
+    margin: 0;
+  }
+}
+
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (min-width: 600px) {
   .SearchResultsPanel-imagecontainer {
@@ -37,7 +43,7 @@
 }
 
 .SearchResultsPanel-image-position {
-  position: absolute;
+  position: relative;
   top: 8px;
   color: black;
   width: 40px;
@@ -56,6 +62,7 @@
 
 .SearchResultsPanel-image-description {
   position: absolute;
+  padding: 10px 0;
   top: 3.5em;
   left: 16px;
   background-color: rgba(0, 0, 0, 0.6);
