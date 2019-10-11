@@ -12,8 +12,8 @@ All front-end components are located in `src/components`
 
 Some other notes:
 
-1. I followed ESLint coding style.
-2. A minimum amount of JavaScript was used to implement the dropdown functionality in search form.
+1. I followed ESLint coding style throughout the project with the maximum line width of 80 characters.
+2. I made the decision to include the 'search form' in the Navbar. The Navbar now provides a text and category selection type search features. A minimum amount of JavaScript was used to implement the dropdown functionality.
 3. BONUS: I implemented @media queries for reactive design.
 
 ## How to start the client.
