@@ -19,14 +19,13 @@ function App() {
       <Provider rootStore={rootStore}>
         <Router history={rootStore.history}>
           <Navbar />
-
           <Route path="/login" component={LoginPanel} />
-          <Route path="/searchform" component={ObjectPanel} />
           <Route path="/sampleresultspage" component={SearchResultsPanel} />
           <Route path="/sampleindividualobjectpage" component={ObjectPanel} />
           <Route path="/objectsubmissionpage" component={ObjSubmissionPanel} />
           <Route path="/userregistration" component={RegistrationPanel} />
-
+          FOR CONVIENIENCE ONLY: <br></br>
+          (Note: The SearchForm is included in NavBar)<br></br>
           <NavLink to="/login">
             [login] <br></br>
           </NavLink>
@@ -45,17 +44,6 @@ function App() {
           <NavLink to="/userregistration">
             [user-registration]<br></br>
           </NavLink>
-
-          {/* <LoginPanel /> */}
-
-          {/* <RegistrationPanel /> */}
-
-          {/* <ObjSubmissionPanel /> */}
-
-          {/* <ObjectPanel /> */}
-
-          {/* <SearchResultsPanel /> */}
-
           <body className="App-body"></body>
           <Footer />
         </Router>
