@@ -8,7 +8,7 @@ Lastly, there is an "Unhandled Rejection (SecurityError)" error that is thrown. 
 
 \*\*Note: I wasn't able to get a student account with Amazon for some reason, I am looking to find an alternative service for submission 2. Thank you for your patience.
 
-All front-end components are located in `src/components`
+All front-end components (JSX/HTML/CSS files) are located in `src/components`.
 
 Minor Comments:
 

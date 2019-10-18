@@ -14,6 +14,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Cellphone screen */
+@media only screen and (max-width: 768px) {
+}
+/* Tablet screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Desktop-windowed screen */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Desktop-fullscreen screen */
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+}
+
+/* Desktop-4K */
 @media only screen and (min-width: 1500px) {
   .App {
     margin: 0 10%;
