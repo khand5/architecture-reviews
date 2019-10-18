@@ -21,14 +21,14 @@ class ObjectPanel extends React.Component {
         <div className="ProfilePanel-gmapcontainer">
           <div className="ProfilePanel-gmapcanvas">
             <iframe
-              width="50%"
+              title="GoogleMapsIFrame"
+              width="100%"
               height="100%"
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=Caterbury%20Cathedral&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
             ></iframe>
-            <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/"></a>
           </div>
         </div>
 
