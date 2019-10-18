@@ -15,14 +15,14 @@ class ObjectPanel extends React.Component {
           <img
             className="ProfilePanel-image"
             src={cathedral}
-            alt="Image of Cathedral"
+            alt="Cathedral"
           ></img>
         </div>
         <div className="ProfilePanel-gmapcontainer">
           <div className="ProfilePanel-gmapcanvas">
             <iframe
-              width="100%"
-              height="20%"
+              width="50%"
+              height="100%"
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=Caterbury%20Cathedral&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0"

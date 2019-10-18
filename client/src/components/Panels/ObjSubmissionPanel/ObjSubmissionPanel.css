@@ -1,22 +1,19 @@
 .ObjSubmissionPanel-container {
   display: block;
-  width: 100%;
-  margin: 0em;
-  margin: 1;
+  width: 50%;
+  margin: 1em auto;
   background-color: bisque;
-  box-shadow: none;
-}
-
-@media only screen and (min-width: 600px) {
-  .ObjSubmissionPanel-container {
-    width: 50%;
-    margin: 1em auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Cellphone screen */
 @media only screen and (max-width: 768px) {
+  .ObjSubmissionPanel-container {
+    width: 100%;
+    margin: 0em;
+    background-color: bisque;
+    box-shadow: none;
+  }
 }
 /* Tablet screen */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -37,7 +34,7 @@
 .ObjSubmissionPanel-title {
   align-content: flex-start;
   font-size: 0.7em;
-  margin: 0;
+  margin: 0 0 1em 0;
 }
 
 .ObjSubmissionPanel-label {
