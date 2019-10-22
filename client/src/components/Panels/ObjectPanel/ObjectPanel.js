@@ -1,42 +1,109 @@
 import React from "react";
 import "./ObjectPanel.css";
-import cathedral from "./cathedral.jpeg";
+
+import Carousel, { Modal, ModalGateway } from "react-images";
+import UserComment from "../../UserComment/UserComment";
+
+import cathedral01 from "./images/canterbury-cathedral-01.jpg";
+import cathedral02 from "./images/canterbury-cathedral-02.jpg";
+import cathedral03 from "./images/canterbury-cathedral-03.jpg";
+import cathedral04 from "./images/canterbury-cathedral-04.jpeg";
+import cathedral05 from "./images/canterbury-cathedral-05.jpeg";
+import cathedral06 from "./images/canterbury-cathedral-06.jpeg";
+import cathedral07 from "./images/canterbury-cathedral-07.jpg";
+import cathedral08 from "./images/canterbury-cathedral-08.jpeg";
+import cathedral09 from "./images/canterbury-cathedral-09.jpeg";
+import cathedral10 from "./images/canterbury-cathedral-10.jpg";
+import cathedral11 from "./images/canterbury-cathedral-11.jpeg";
+import cathedral12 from "./images/canterbury-cathedral-12.jpg";
+import cathedral13 from "./images/canterbury-cathedral-13.jpg";
+import cathedral14 from "./images/canterbury-cathedral-14.jpg";
+import cathedral15 from "./images/canterbury-cathedral-15.jpg";
+import cathedral16 from "./images/canterbury-cathedral-16.jpg";
+import cathedral17 from "./images/canterbury-cathedral-17.jpeg";
+import cathedral18 from "./images/canterbury-cathedral-18.jpg";
+
+const images = [
+  { src: cathedral01 },
+  { src: cathedral02 },
+  { src: cathedral03 },
+  { src: cathedral04 },
+  { src: cathedral05 },
+  { src: cathedral06 },
+  { src: cathedral07 },
+  { src: cathedral08 },
+  { src: cathedral09 },
+  { src: cathedral10 },
+  { src: cathedral11 },
+  { src: cathedral12 },
+  { src: cathedral13 },
+  { src: cathedral14 },
+  { src: cathedral15 },
+  { src: cathedral16 },
+  { src: cathedral17 },
+  { src: cathedral18 }
+];
 
 class ObjectPanel extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { modalIsOpen: false };
   }
+  toggleModal = () => {
+    this.setState(state => ({ modalIsOpen: !state.modalIsOpen }));
+  };
 
   render() {
+    const { modalIsOpen } = this.state;
+
     return (
       <div className="ProfilePanel-container">
-        <div className="ProfilePanel-imagecontainer">
-          <img
-            className="ProfilePanel-image"
-            src={cathedral}
-            alt="Cathedral"
-          ></img>
-        </div>
-        <div className="ProfilePanel-gmapcontainer">
-          <div className="ProfilePanel-gmapcanvas">
-            <iframe
-              title="GoogleMapsIFrame"
-              width="100%"
-              height="100%"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=Caterbury%20Cathedral&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-            ></iframe>
-          </div>
+        <div className="ProfilePanel-titlecontainer">
+          <h1>The Canterbury Cathedral</h1>
         </div>
 
+        <div className="ImageGallery-container">
+          <div
+            onClick={() => this.setState({ modalIsOpen: true })}
+            style={{
+              backgroundImage: `url(${cathedral01})`
+            }}
+            className="ImageGallery-image"
+          ></div>
+          <div
+            onClick={() => this.setState({ modalIsOpen: true })}
+            style={{
+              backgroundImage: `url(${cathedral12})`
+            }}
+            className="ImageGallery-image"
+          ></div>
+          <div
+            onClick={() => this.setState({ modalIsOpen: true })}
+            style={{
+              backgroundImage: `url(${cathedral14})`
+            }}
+            className="ImageGallery-image"
+          ></div>
+          <div
+            onClick={() => this.setState({ modalIsOpen: true })}
+            style={{
+              backgroundImage: `url(${cathedral09})`
+            }}
+            className="ImageGallery-image"
+          ></div>
+        </div>
+
+        <ModalGateway>
+          {modalIsOpen ? (
+            <Modal onClose={this.toggleModal}>
+              <Carousel views={images} />
+            </Modal>
+          ) : null}
+        </ModalGateway>
+
         <div className="ProfilePanel-data-container">
-          <div className="ProfilePanel-title">
-            <div>
-              <h1>Canterbury Cathedral: A Lorem Ipsum Architecture Review</h1>
-            </div>
+          <div className="ProfilePanel-review-title">
+            <h3>Canterbury Cathedral: A Lorem Ipsum Architecture Review</h3>
           </div>
           <div className="ProfilePanel-metadata">
             <p>Last Updated: September 1st, 2019</p>
@@ -85,7 +152,6 @@ class ObjectPanel extends React.Component {
               ornare ornare.
             </p>
           </div>
-
           <div className="ProfilePanel-author-footer">
             <p className="ProfilePanel-author-footer-item">
               Authored by: Lorem Ipsum PEng., PhD, Masters Civil Design.
@@ -97,7 +163,6 @@ class ObjectPanel extends React.Component {
               User Average Score: 9.87/10
             </p>
           </div>
-
           <div className="ProfilePanel-author-footer-interactive">
             <button className="ProfilePanel-author-footer-item-button fa fa-thumbs-up" />
             <button className="ProfilePanel-author-footer-item-button fa fa-thumbs-down" />
@@ -105,232 +170,64 @@ class ObjectPanel extends React.Component {
             <button className="ProfilePanel-author-footer-item-button fa fa-comment" />
           </div>
         </div>
+        {/* GOOGLE MAPS CONTAINER */}
+        <div className="ProfilePanel-gmapcontainer">
+          <div className="ProfilePanel-gmapcanvas">
+            <iframe
+              title="GoogleMapsIFrame"
+              width="100%"
+              height="100%"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Caterbury%20Cathedral&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameBorder="0"
+              scrolling="auto"
+            ></iframe>
+          </div>
+        </div>
 
         <div className="ProfilePanel-userreviews-container">
-          <div className="ProfilePanel-userrewviews-review">
-            <div className="ProfilePanel-userreview-title">
-              <h3>Object Name: Another Perspective</h3>
-            </div>
-            <div className="ProfilePanel-userreview-metadata">
-              <p>Last Updated: September 1st, 2019</p>
-              <p>219,291 views</p>
-              <p>
-                <i className="fa fa-thumbs-up"></i> 9,231
-              </p>
-              <p>
-                <i className="fa fa-thumbs-down"></i> 11
-              </p>
-              <p>
-                <i className="fa fa-heart"></i> 1,231
-              </p>
-            </div>
-            <p className="ProfilePanel-userreview-comment">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
-              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
-              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
-              ullamcorper elit lacinia. In hac habitasse platea dictumst.
-              Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Suspendisse et volutpat augue.
-            </p>
-
-            <div className="ProfilePanel-userreviews-interactive">
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
-              <p className="ProfilePanel-userreview-username">
-                Submitted by: Daren Armstrong
-              </p>
-            </div>
+          <div className="ProfilePanel-userreviews-column">
+            <UserComment
+              review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula
+              dictum dictum. Donec non massa dictum, lobortis leo sit amet, congue
+              lorem. Nunc ex augue, iaculis et dui hendrerit, ullamcorper mollis
+              elit. Aenean scelerisque varius malesuada. Vivamus at felis urna.
+              Etiam volutpat consectetur enim, a suscipit sapien dapibus sed.
+              Nulla elementum, nunc in lacinia dapibus, nunc lectus suscipit urna,
+              nec tristique augue enim quis massa. Cras egestas lorem nec velit
+              commodo auctor. Phasellus nec elit sit amet metus condimentum
+              pulvinar sed non nisl."
+            />
           </div>
-
-          <div className="ProfilePanel-userrewviews-review">
-            <div className="ProfilePanel-userreview-title">
-              <h3>Object Name: Another Perspective</h3>
-            </div>
-            <div className="ProfilePanel-userreview-metadata">
-              <p>Last Updated: September 1st, 2019</p>
-              <p>219,291 views</p>
-              <p>
-                <i className="fa fa-thumbs-up"></i> 9,231
-              </p>
-              <p>
-                <i className="fa fa-thumbs-down"></i> 11
-              </p>
-              <p>
-                <i className="fa fa-heart"></i> 1,231
-              </p>
-            </div>
-            <p className="ProfilePanel-userreview-comment">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
-              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
-              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
-              ullamcorper elit lacinia. In hac habitasse platea dictumst.
-              Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Suspendisse et volutpat augue.
-            </p>
-
-            <div className="ProfilePanel-userreviews-interactive">
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
-              <div className="ProfilePanel-userreview-username">
-                Submitted by: Junhao Wang
-              </div>
-            </div>
+          <div className="ProfilePanel-userreviews-column">
+            <UserComment
+              review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula
+              dictum dictum. Donec non massa dictum, lobortis leo sit amet, congue
+              lorem. Nunc ex augue, iaculis et dui hendrerit, ullamcorper mollis
+              elit. "
+            />
+            <UserComment
+              review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula
+              dictum dictum. Donec non massa dictum, lobortis leo sit amet, congue
+              lorem. Nunc ex augue, iaculis et dui hendrerit, ullamcorper mollis
+              elit. "
+            />
           </div>
-
-          <div className="ProfilePanel-userrewviews-review">
-            <div className="ProfilePanel-userreview-title">
-              <h3>Object Name: Another Perspective</h3>
-            </div>
-            <div className="ProfilePanel-userreview-metadata">
-              <p>Last Updated: September 1st, 2019</p>
-              <p>219,291 views</p>
-              <p>
-                <i className="fa fa-thumbs-up"></i> 9,231
-              </p>
-              <p>
-                <i className="fa fa-thumbs-down"></i> 11
-              </p>
-              <p>
-                <i className="fa fa-heart"></i> 1,231
-              </p>
-            </div>
-            <p className="ProfilePanel-userreview-comment">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
-              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
-              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
-              ullamcorper elit lacinia. In hac habitasse platea dictumst.
-              Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Suspendisse et volutpat augue.
-            </p>
-
-            <div className="ProfilePanel-userreviews-interactive">
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
-              <div className="ProfilePanel-userreview-username">
-                Submitted by: Junhao Wang
-              </div>
-            </div>
-          </div>
-
-          <div className="ProfilePanel-userrewviews-review">
-            <div className="ProfilePanel-userreview-title">
-              <h3>Object Name: Another Perspective</h3>
-            </div>
-            <div className="ProfilePanel-userreview-metadata">
-              <p>Last Updated: September 1st, 2019</p>
-              <p>219,291 views</p>
-              <p>
-                <i className="fa fa-thumbs-up"></i> 9,231
-              </p>
-              <p>
-                <i className="fa fa-thumbs-down"></i> 11
-              </p>
-              <p>
-                <i className="fa fa-heart"></i> 1,231
-              </p>
-            </div>
-            <p className="ProfilePanel-userreview-comment">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
-              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
-              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
-              ullamcorper elit lacinia. In hac habitasse platea dictumst.
-              Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Suspendisse et volutpat augue.
-            </p>
-
-            <div className="ProfilePanel-userreviews-interactive">
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
-              <div className="ProfilePanel-userreview-username">
-                Submitted by: Junhao Wang
-              </div>
-            </div>
-          </div>
-          <div className="ProfilePanel-userrewviews-review">
-            <div className="ProfilePanel-userreview-title">
-              <h3>Object Name: Another Perspective</h3>
-            </div>
-            <div className="ProfilePanel-userreview-metadata">
-              <p>Last Updated: September 1st, 2019</p>
-              <p>219,291 views</p>
-              <p>
-                <i className="fa fa-thumbs-up"></i> 9,231
-              </p>
-              <p>
-                <i className="fa fa-thumbs-down"></i> 11
-              </p>
-              <p>
-                <i className="fa fa-heart"></i> 1,231
-              </p>
-            </div>
-            <p className="ProfilePanel-userreview-comment">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
-              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
-              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
-              ullamcorper elit lacinia. In hac habitasse platea dictumst.
-              Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Suspendisse et volutpat augue.
-            </p>
-
-            <div className="ProfilePanel-userreviews-interactive">
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
-              <div className="ProfilePanel-userreview-username">
-                Submitted by: Junhao Wang
-              </div>
-            </div>
-          </div>
-          <div className="ProfilePanel-userrewviews-review">
-            <div className="ProfilePanel-userreview-title">
-              <h3>Object Name: Another Perspective</h3>
-            </div>
-            <div className="ProfilePanel-userreview-metadata">
-              <p>Last Updated: September 1st, 2019</p>
-              <p>219,291 views</p>
-              <p>
-                <i className="fa fa-thumbs-up"></i> 9,231
-              </p>
-              <p>
-                <i className="fa fa-thumbs-down"></i> 11
-              </p>
-              <p>
-                <i className="fa fa-heart"></i> 1,231
-              </p>
-            </div>
-            <p className="ProfilePanel-userreview-comment">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-              elit feugiat, fringilla felis vel, volutpat risus. Etiam non massa
-              eleifend, tristique dui non, vestibulum risus. Vestibulum vel
-              mollis ipsum. Donec faucibus sapien eu neque imperdiet, ac
-              ullamcorper elit lacinia. In hac habitasse platea dictumst.
-              Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Suspendisse et volutpat augue.
-            </p>
-
-            <div className="ProfilePanel-userreviews-interactive">
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-up" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-thumbs-down" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-heart" />
-              <button className="ProfilePanel-userreviews-item-button fa fa-comment" />
-              <div className="ProfilePanel-userreview-username">
-                Submitted by: Junhao Wang
-              </div>
-            </div>
+          <div className="ProfilePanel-userreviews-column">
+            <UserComment
+              review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula
+              dictum dictum. Donec non massa dictum, lobortis leo sit amet, congue
+              lorem. Nunc ex augue, iaculis et dui hendrerit, ullamcorper mollis
+              elit. Aenean scelerisque varius malesuada. Vivamus at felis urna.
+              Etiam volutpat consectetur enim, a suscipit sapien dapibus sed.
+              Nulla elementum, nunc in lacinia dapibus, nunc lectus suscipit urna,
+              nec tristique augue enim quis massa. Cras egestas lorem nec velit
+              commodo auctor. Phasellus nec elit sit amet metus condimentum
+              pulvinar sed non nisl. Quisque felis ante, tincidunt blandit ex
+              vitae, vulputate tristique leo. Praesent eu ante semper ex malesuada
+              porttitor sed in lorem. Cras cursus est imperdiet arcu hendrerit
+              tempor."
+            />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./SearchResultsPanel.css";
-import cathedral from "../ObjectPanel/cathedral.jpeg";
+import cathedral from "../ObjectPanel/images/canterbury-cathedral-05.jpeg";
 
 class SearchResultsPanel extends React.Component {
   constructor(props) {
@@ -23,8 +23,8 @@ class SearchResultsPanel extends React.Component {
                 src="https://maps.google.com/maps?q=Caterbury%20Cathedral&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 frameborder="0"
                 scrolling="no"
+                title="google_maps"
               ></iframe>
-              <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/"></a>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@ class SearchResultsPanel extends React.Component {
         <div className="SearchResultsPanel-results-container">
           <div
             className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/cathedral.jpeg"
+            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
           >
             <div className="SearchResultsPanel-image-position">A</div>
             <div className="SearchResultsPanel-image-title">
@@ -52,7 +52,7 @@ class SearchResultsPanel extends React.Component {
 
           <div
             className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/cathedral.jpeg"
+            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
           >
             <div className="SearchResultsPanel-image-position">A</div>
             <div className="SearchResultsPanel-image-title">
@@ -72,7 +72,7 @@ class SearchResultsPanel extends React.Component {
 
           <div
             className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/cathedral.jpeg"
+            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
           >
             <div className="SearchResultsPanel-image-position">A</div>
             <div className="SearchResultsPanel-image-title">
@@ -92,7 +92,7 @@ class SearchResultsPanel extends React.Component {
 
           <div
             className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/cathedral.jpeg"
+            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
           >
             <div className="SearchResultsPanel-image-position">A</div>
             <div className="SearchResultsPanel-image-title">
@@ -112,7 +112,7 @@ class SearchResultsPanel extends React.Component {
 
           <div
             className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/cathedral.jpeg"
+            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
           >
             <div className="SearchResultsPanel-image-position">A</div>
             <div className="SearchResultsPanel-image-title">
@@ -132,7 +132,7 @@ class SearchResultsPanel extends React.Component {
 
           <div
             className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/cathedral.jpeg"
+            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
           >
             <div className="SearchResultsPanel-image-position">A</div>
             <div className="SearchResultsPanel-image-title">

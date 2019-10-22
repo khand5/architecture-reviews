@@ -1,6 +1,6 @@
 {
   "name": "chess-online",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "chess.js": "^0.10.2",
@@ -8,8 +8,12 @@
     "font-awesome": "^4.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-images": "^1.0.0",
     "react-scripts": "3.0.1",
     "source-map-explorer": "^2.0.1"
+  },
+  "engines": {
+    "node": "10.14.2"
   },
   "scripts": {
     "start": "react-scripts start",
