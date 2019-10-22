@@ -1,5 +1,11 @@
 ## Project Notes:
 
+# Project Online:
+
+Dedicated Heroku Container: https://architecture-reviews.herokuapp.com/#/
+
+- Note: I could not acquire an AWS subscription for education for some reason. I decided to upload the project unoto Heroku's free tier hosting service instead.
+
 Disclaimer: This project uses the React framework to render all components. I apologize for including dynamic rendering in this part of the assignment. The Professor assured us in the beginning that we were allowed to use other libraries so I just went ahead and wrote the entire App in JSX using JavaScript to dynamically render HTML & CSS at runtime. Aside from compiling/rendering, I do not use JavaScript for any other purpose.
 
 HTML5/CSS Validator: Again, due to React's dynamically rendered components, the validators do not pick up any of the markup as this is placed within the document at runtime with JavaScript.
