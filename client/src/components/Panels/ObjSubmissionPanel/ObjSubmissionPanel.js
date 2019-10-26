@@ -24,8 +24,8 @@ class ObjSubmissionPanel extends React.Component {
           <input type="number" name="Username" />
           <p className="ObjSubmissionPanel-label">Image:</p>
           <input type="file" name="Username" />
-          <input type="submit" name="Username" />
         </form>
+        <input type="submit" value="Submit" />
       </div>
     );
   }
