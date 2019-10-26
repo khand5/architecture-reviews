@@ -58,6 +58,7 @@ class RegistrationPanel extends React.Component {
             <input type="checkbox" name="Communication2" value="Email" />
             Email
           </div>
+          <input type="submit" value="Submit" />
         </form>
       </div>
     );
