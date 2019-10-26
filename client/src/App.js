@@ -44,6 +44,9 @@ function App() {
           <NavLink to="/userregistration">
             [user-registration]<br></br>
           </NavLink>
+          <NavLink to="/userprofile">
+            [user-profile]<br></br>
+          </NavLink>
           <div className="App-body"></div>
           <Footer />
         </Router>

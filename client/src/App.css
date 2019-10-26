@@ -14,6 +14,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App-body {
+}
+
 /* Cellphone screen */
 @media only screen and (max-width: 768px) {
 }
