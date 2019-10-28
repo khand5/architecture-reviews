@@ -1,0 +1,16 @@
+.VideoPlayer-container {
+}
+
+.VideoPlayer-player {
+}
+
+/* Another viable solution */
+html > div {
+  display: none;
+}
+
+/* Hide Opera detach video popup button */
+/* May remove other useful browser popups, inserted after "body" element. */
+html > div[style] {
+  display: none !important;
+}

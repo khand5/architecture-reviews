@@ -13,6 +13,7 @@ import RegistrationPanel from "./components/Panels/RegistrationPanel/Registratio
 import ObjSubmissionPanel from "./components/Panels/ObjSubmissionPanel/ObjSubmissionPanel";
 import ObjSummaryPanel from "./components/Panels/ObjSummaryPanel/ObjSummaryPanel";
 import SearchResultsPanel from "./components/Panels/SearchResultsPanel/SearchResultsPanel";
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/objectsubmissionpage" component={ObjSubmissionPanel} />
           <Route path="/userregistration" component={RegistrationPanel} />
           <Route path="/objectsummarypanel" component={ObjSummaryPanel} />
+          <Route path="/videoplayer" component={VideoPlayer} />
           FOR CONVIENIENCE ONLY: <br></br>
           (Note: The SearchForm is included in NavBar)<br></br>
           <NavLink to="/login">
@@ -52,6 +54,13 @@ function App() {
           <NavLink to="/objectsummarypanel">
             [object-summary-panel]<br></br>
           </NavLink>
+          <NavLink to="/videoplayer">
+            [video-player]<br></br>
+          </NavLink>
+          <br />
+          <a href="https://architecture-reviews.herokuapp.com/">
+            [current-production-build-link-to-Heroku]
+          </a>
           <div className="App-body"></div>
           <Footer />
         </Router>
