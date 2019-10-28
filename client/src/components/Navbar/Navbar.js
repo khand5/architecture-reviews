@@ -13,7 +13,7 @@ class Header extends React.Component {
     return (
       <div className="Navbar">
         <div className="Navbar-title">
-          <h1>Global Architecture Reviews</h1>
+          <h1>Global Architecture Council</h1>
         </div>
         <div className="Navbar-container">
           <div className="Navbar-item Navbar-item-left Hover">Submit</div>

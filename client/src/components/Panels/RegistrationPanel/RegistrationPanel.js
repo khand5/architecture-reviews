@@ -54,7 +54,7 @@ class RegistrationPanel extends React.Component {
               Preferred Method of Communication?:
             </p>
             <input type="checkbox" name="Communication1" value="GARPlatform" />
-            Global Architecture Reviews
+            Global Architecture Council
             <input type="checkbox" name="Communication2" value="Email" />
             Email
           </div>
