@@ -179,7 +179,7 @@ class ObjectProfilePanel extends React.Component {
 
           <div className="ProfilePanel-summary-rating-statbox">
             <div className="ProfilePanel-summary-header">
-              GAC-PHENOMENON Rating
+              GAC-CLASSIFICATION
             </div>
             <div className="ProfilePanel-summary-body">
               <span class="fa fa-star"></span>

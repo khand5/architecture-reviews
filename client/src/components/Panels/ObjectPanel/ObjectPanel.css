@@ -216,13 +216,6 @@ h1 {
 .ProfilePanel-userreviews-container {
   display: flex;
   padding: 0 5px 10px 5px;
-  margin-bottom: 100px;
-}
-
-.ProfilePanel-userreviews-interactive-container {
-  display: flex;
-  height: 3em;
-  margin: 10px;
 }
 
 .ProfilePanel-userreviews-column {
