@@ -11,6 +11,7 @@ import LoginPanel from "./components/Panels/LoginPanel/LoginPanel";
 import ObjectPanel from "./components/Panels/ObjectPanel/ObjectPanel";
 import RegistrationPanel from "./components/Panels/RegistrationPanel/RegistrationPanel";
 import ObjSubmissionPanel from "./components/Panels/ObjSubmissionPanel/ObjSubmissionPanel";
+import ObjSummaryPanel from "./components/Panels/ObjSummaryPanel/ObjSummaryPanel";
 import SearchResultsPanel from "./components/Panels/SearchResultsPanel/SearchResultsPanel";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/sampleindividualobjectpage" component={ObjectPanel} />
           <Route path="/objectsubmissionpage" component={ObjSubmissionPanel} />
           <Route path="/userregistration" component={RegistrationPanel} />
+          <Route path="/objectsummarypanel" component={ObjSummaryPanel} />
           FOR CONVIENIENCE ONLY: <br></br>
           (Note: The SearchForm is included in NavBar)<br></br>
           <NavLink to="/login">
@@ -46,6 +48,9 @@ function App() {
           </NavLink>
           <NavLink to="/userprofile">
             [user-profile]<br></br>
+          </NavLink>
+          <NavLink to="/objectsummarypanel">
+            [object-summary-panel]<br></br>
           </NavLink>
           <div className="App-body"></div>
           <Footer />

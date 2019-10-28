@@ -1,6 +1,7 @@
 import React from "react";
 import "./SearchResultsPanel.css";
-import cathedral from "../ObjectPanel/images/canterbury-cathedral-05.jpeg";
+
+import ObjSummaryPanel from "../ObjSummaryPanel/ObjSummaryPanel";
 
 class SearchResultsPanel extends React.Component {
   constructor(props) {
@@ -30,125 +31,16 @@ class SearchResultsPanel extends React.Component {
         </div>
 
         <div className="SearchResultsPanel-results-container">
-          <div
-            className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
-          >
-            <div className="SearchResultsPanel-image-position">A</div>
-            <div className="SearchResultsPanel-image-title">
-              Caterbury Cathedral
-            </div>
-            <div className="SearchResultsPanel-image-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...
-            </div>
-            <div className="SearchResultsPanel-image-rating">
-              Category: ★★★★
-            </div>
-            <div className="SearchResultsPanel-image-average">
-              Average: 8.2/10
-            </div>
-          </div>
+          <ObjSummaryPanel />
 
-          <div
-            className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
-          >
-            <div className="SearchResultsPanel-image-position">A</div>
-            <div className="SearchResultsPanel-image-title">
-              Caterbury Cathedral
-            </div>
-            <div className="SearchResultsPanel-image-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...
-            </div>
-            <div className="SearchResultsPanel-image-rating">
-              Category: ★★★★
-            </div>
-            <div className="SearchResultsPanel-image-average">
-              Average: 8.2/10
-            </div>
-          </div>
+          <ObjSummaryPanel />
+          <ObjSummaryPanel />
+          <ObjSummaryPanel />
+          <ObjSummaryPanel />
 
-          <div
-            className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
-          >
-            <div className="SearchResultsPanel-image-position">A</div>
-            <div className="SearchResultsPanel-image-title">
-              Caterbury Cathedral
-            </div>
-            <div className="SearchResultsPanel-image-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...
-            </div>
-            <div className="SearchResultsPanel-image-rating">
-              Category: ★★★★
-            </div>
-            <div className="SearchResultsPanel-image-average">
-              Average: 8.2/10
-            </div>
-          </div>
-
-          <div
-            className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
-          >
-            <div className="SearchResultsPanel-image-position">A</div>
-            <div className="SearchResultsPanel-image-title">
-              Caterbury Cathedral
-            </div>
-            <div className="SearchResultsPanel-image-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...
-            </div>
-            <div className="SearchResultsPanel-image-rating">
-              Category: ★★★★
-            </div>
-            <div className="SearchResultsPanel-image-average">
-              Average: 8.2/10
-            </div>
-          </div>
-
-          <div
-            className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
-          >
-            <div className="SearchResultsPanel-image-position">A</div>
-            <div className="SearchResultsPanel-image-title">
-              Caterbury Cathedral
-            </div>
-            <div className="SearchResultsPanel-image-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...
-            </div>
-            <div className="SearchResultsPanel-image-rating">
-              Category: ★★★★
-            </div>
-            <div className="SearchResultsPanel-image-average">
-              Average: 8.2/10
-            </div>
-          </div>
-
-          <div
-            className="SearchResultsPanel-imagecontainer"
-            background="../ObjectPanel/images/canterbury-cathedral-05.jpeg"
-          >
-            <div className="SearchResultsPanel-image-position">A</div>
-            <div className="SearchResultsPanel-image-title">
-              Caterbury Cathedral
-            </div>
-            <div className="SearchResultsPanel-image-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
-              metus placerat, ullamcorper lectus mollis, bibendum leo...
-            </div>
-            <div className="SearchResultsPanel-image-rating">
-              Category: ★★★★
-            </div>
-            <div className="SearchResultsPanel-image-average">
-              Average: 8.2/10
-            </div>
-          </div>
+          <ObjSummaryPanel />
+          <ObjSummaryPanel />
+          <ObjSummaryPanel />
         </div>
       </div>
     );

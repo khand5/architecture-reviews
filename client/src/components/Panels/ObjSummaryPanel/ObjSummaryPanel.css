@@ -1,29 +1,102 @@
 .ObjSummaryPanel-container {
-  height: 300px;
-  min-width: 300px;
-  max-width: 300px;
+  /* height: 300px;
+  min-width: 200px;
+  max-width: 200px; */
+  text-overflow: ellipsis;
   position: relative;
 
-  display: block;
-  margin: 1em auto;
+  display: inline-block;
+  margin: 5px;
   background-color: bisque;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.ObjSummaryPanel-container-img-container {
+.ObjSummaryPanel-img-container {
   height: 200px;
   background: url("https://images.alphacoders.com/511/511342.jpg");
   background-size: cover;
   background-position: center;
   background-color: grey;
 }
+
+.ObjSummaryPanel-info-container {
+  max-height: 100px;
+  padding: 10px;
+}
 .ObjSummaryPanel-gac {
   position: absolute;
   color: bisque;
   width: 100%;
-  bottom: 100px;
+  top: 182px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 .ObjSummaryPanel-name {
-  font-size: 1.5em;
-  background: ;
+  font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ObjSummaryPanel-location,
+.ObjSummaryPanel-denomination,
+.ObjSummaryPanel-public,
+.ObjSummaryPanel-submission-author {
+  font-size: 0.7em;
+}
+
+/* Small cellphone screen */
+@media only screen and (max-width: 476px) {
+  .ObjSummaryPanel-container {
+    display: flex;
+    width: 100%;
+    flex-flow: row-reverse nowrap;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .ObjSummaryPanel-img-container {
+    height: auto;
+    min-width: 90px;
+  }
+  .ObjSummaryPanel-info-container {
+    flex: 2;
+    min-width: 200px;
+    height: auto;
+  }
+  .ObjSummaryPanel-gac {
+    position: absolute;
+    color: bisque;
+    width: 90px;
+    top: 73px;
+    z-index: 1;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
+
+/* Cellphone screen */
+@media only screen and (min-width: 477px) and (max-width: 768px) {
+}
+
+/* Tablet screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Desktop-windowed screen */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Desktop-fullscreen screen */
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+}
+
+/* Desktop-4K */
+@media only screen and (min-width: 1500px) {
 }

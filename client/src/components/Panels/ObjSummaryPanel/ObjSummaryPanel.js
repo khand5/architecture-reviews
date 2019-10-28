@@ -10,7 +10,7 @@ class ObjSummaryPanel extends React.Component {
   render() {
     return (
       <div className="ObjSummaryPanel-container">
-        <div className="ObjSummaryPanel-container-img-container">
+        <div className="ObjSummaryPanel-img-container">
           <div className="ObjSummaryPanel-gac">
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
@@ -19,14 +19,18 @@ class ObjSummaryPanel extends React.Component {
             <span class="fa fa-star-o"></span>
           </div>
         </div>
-        <div className="ObjSummaryPanel-name">Caterbury Cathedral</div>
-        <div className="ObjSummaryPanel-location">
-          Canterbury, Kent, England
-        </div>
-        <div className="ObjSummaryPanel-denomination">Church of England</div>
+        <div className="ObjSummaryPanel-info-container">
+          <div className="ObjSummaryPanel-name">
+            Flying Canterbury Cathedral
+          </div>
+          <div className="ObjSummaryPanel-location">
+            Canterbury, Kent, England
+          </div>
+          <div className="ObjSummaryPanel-denomination ">Church of England</div>
 
-        <div className="ObjSummaryPanel-public">93/100</div>
-        <div className="ObjSummaryPanel-submission-author">John Davis</div>
+          <div className="ObjSummaryPanel-public">93/100</div>
+          <div className="ObjSummaryPanel-submission-author">John Davis</div>
+        </div>
       </div>
     );
   }

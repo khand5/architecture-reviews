@@ -1,13 +1,10 @@
-.SearchResultsPanel-container {
-  display: block;
-  margin: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .SearchResultsPanel-results-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 5px;
+
+  margin: 30px;
 }
 
 .SearchResultsPanel-imagecontainer {
@@ -21,29 +18,12 @@
   background-image: url("../ObjectPanel/images/canterbury-cathedral-05.jpeg");
 }
 
-@media screen and (max-width: 600px) {
-  .SearchResultsPanel-container {
-    margin: 0;
-  }
-}
-
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (min-width: 600px) {
-  .SearchResultsPanel-imagecontainer {
-    width: 50%;
-    margin: 10px 0;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .SearchResultsPanel-imagecontainer {
-    width: 33%;
-    margin: 10px 0;
-  }
-}
-
 /* Cellphone screen */
 @media only screen and (max-width: 768px) {
+  .SearchResultsPanel-results-container {
+    margin: 0;
+    padding: 0;
+  }
 }
 /* Tablet screen */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
