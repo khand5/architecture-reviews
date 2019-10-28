@@ -1,11 +1,6 @@
 .ProfilePanel-container {
-  display: block;
   background: bisque;
-  /* background: linear-gradient(
-    200deg,
-    rgb(136, 125, 125) 0%,
-    rgb(104, 97, 97) 100%
-  ); */
+
   /* background: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   margin: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

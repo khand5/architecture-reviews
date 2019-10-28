@@ -27,12 +27,12 @@ class Header extends React.Component {
               Categories <i className="fa fa-angle-down"></i>
             </div>
             <div className="Navbar-item-dropdown-content Hover">
-              <a href=""> ★ ★ ★ ★ ★</a>
-              <a href=""> ★ ★ ★ ★</a>
-              <a href=""> ★ ★ ★</a>
-              <a href=""> ★ ★</a>
-              <a href=""> ★</a>
-              <a href=""> Unrated</a>
+              <a href="/search"> ★ ★ ★ ★ ★</a>
+              <a href="/search"> ★ ★ ★ ★</a>
+              <a href="/search"> ★ ★ ★</a>
+              <a href="/search"> ★ ★</a>
+              <a href="/search"> ★</a>
+              <a href="/search"> Unrated</a>
             </div>
           </div>
 
@@ -42,7 +42,7 @@ class Header extends React.Component {
               className="Navbar-item-search-bar"
               placeholder="Search.."
             ></input>
-            <a className="Navbar-item-search-button" href="">
+            <a className="Navbar-item-search-button" href="/search">
               <i className="fa fa-search"></i>
             </a>
           </div>
@@ -54,7 +54,7 @@ class Header extends React.Component {
               this.setState({ loginHover: !this.state.loginHover })
             }
             style={{
-              background: this.state.loginHover ? "grey" : "none"
+              background: this.state.loginHover ? "lightgrey" : "none"
             }}
           >
             Login
