@@ -110,6 +110,7 @@ h1 {
 }
 
 .ProfilePanel-summary-rating-statbox {
+  flex: 1;
   min-width: 200px;
 
   justify-self: flex-end;
@@ -145,6 +146,73 @@ h1 {
   width: 100%;
 }
 
+.ProfilePanel-usercomment-container {
+  width: 100%;
+}
+
+.ProfilePanel-usercomment-header {
+  color: rgb(73, 71, 69);
+}
+
+.ProfilePanel-usercomment-body {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: rgb(250, 232, 211, 0.9);
+}
+
+.ProfilePanel-usercomment-userinfo {
+  display: flex;
+  align-items: center;
+}
+
+.ProfilePanel-usercomment-user-img {
+  background-image: url("https://randomuser.me/api/portraits/men/82.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  min-width: 35px;
+  height: 35px;
+  margin: 0 10px;
+}
+
+.ProfilePanel-usercomment-username {
+  padding-right: 10px;
+}
+
+.ProfilePanel-usercomment-body-textarea {
+  width: 400px;
+  height: 42px;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 4px;
+}
+
+.ProfilePanel-usercomment-body-form {
+  display: flex;
+}
+.ProfilePanel-usercomment-body-numpicker {
+  width: 40px;
+  padding: 0 10px;
+  background: burlywood;
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  color: rgb(73, 71, 69);
+}
+.ProfilePanel-usercomment-body-button {
+  width: 60px;
+  padding: 0px;
+  background: blanchedalmond;
+}
+
+.ProfilePanel-usercomment-body-textarea:focus,
+.ProfilePanel-usercomment-body-button:focus,
+.ProfilePanel-usercomment-body-numpicker:focus {
+  outline: none;
+}
+
 .ProfilePanel-userreviews-container {
   display: flex;
   padding: 0 5px 10px 5px;
@@ -157,24 +225,6 @@ h1 {
   margin: 10px;
 }
 
-.ProfilePanel-userreviews-interactive-textarea {
-  width: 12em;
-  height: 100%;
-  background: cornsilk;
-  border: none;
-  padding: 0;
-  resize: none;
-}
-
-.ProfilePanel-userreviews-interactive-commentbox:focus {
-  outline: none;
-}
-
-.ProfilePanel-userreviews-interactive-comment-button {
-  height: 3em;
-  background: blanchedalmond;
-}
-
 .ProfilePanel-userreviews-column {
   flex: 1;
   display: flex;
@@ -183,21 +233,6 @@ h1 {
   height: 100%;
   padding: 0 5px;
   min-width: 200px;
-}
-
-.Sample-review {
-  background: burlywood;
-  margin-top: 10px;
-}
-
-.Samiple-reivew-header {
-  display: flex;
-  align-items: center;
-}
-
-.Sample-review-body {
-  padding: 10px;
-  text-align: justify;
 }
 
 /* Cellphone screen */
@@ -212,9 +247,14 @@ h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
   }
-
   .ImageGallery-image {
     min-width: 100px;
+  }
+  .ProfilePanel-usercomment-userinfo {
+    display: none;
+  }
+  .ProfilePanel-usercomment-body-textarea {
+    width: 200px;
   }
 }
 /* Tablet screen */

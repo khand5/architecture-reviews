@@ -155,10 +155,12 @@ class ObjectProfilePanel extends React.Component {
           </div>
         </div>
 
+        <hr />
+
         <div className="ProfilePanel-summary-container">
           <div className="ProfilePanel-summary-statbox">
             <div className="ProfilePanel-summary-header">
-              Review Council Submission Lead
+              COUNCIL SUBMISSION LEAD
             </div>
             John Davis
             <br />
@@ -166,7 +168,7 @@ class ObjectProfilePanel extends React.Component {
           </div>
 
           <div className="ProfilePanel-summary-statbox">
-            <div className="ProfilePanel-summary-header">PRESERVATION:</div>
+            <div className="ProfilePanel-summary-header">PRESERVATION</div>
             <div className="ProfilePanel-summary-body">98%</div>
           </div>
 
@@ -189,6 +191,8 @@ class ObjectProfilePanel extends React.Component {
           </div>
         </div>
 
+        <hr />
+
         {/* GOOGLE MAPS CONTAINER */}
         <div className="ProfilePanel-gmapcontainer">
           <div className="ProfilePanel-gmapcontainer-label">
@@ -209,18 +213,39 @@ class ObjectProfilePanel extends React.Component {
             COORDINATES: 51.2798° N, 1.0828° E
           </div>
         </div>
-        <div className="ProfilePanel-userreviews-interactive-container">
-          <form action="">
-            <textarea
-              type="textarea"
-              rows="4"
-              cols="150"
-              placeholder="Add public comment..."
-              className="ProfilePanel-userreviews-interactive-textarea"
-            ></textarea>
-          </form>
-          <button className="ProfilePanel-userreviews-interactive-comment-button fa fa-comment-o"></button>
+
+        <hr />
+
+        <div className="ProfilePanel-usercomment-container">
+          <div className="ProfilePanel-usercomment-header">Comment</div>
+          <div className="ProfilePanel-usercomment-body">
+            <div className="ProfilePanel-usercomment-userinfo">
+              <div className="ProfilePanel-usercomment-user-img"></div>
+              <div className="ProfilePanel-usercomment-username">
+                Haris Khan
+              </div>
+            </div>
+
+            <form action="" className="ProfilePanel-usercomment-body-form">
+              <textarea
+                type="textarea"
+                placeholder="Add public comment..."
+                className="ProfilePanel-usercomment-body-textarea"
+              ></textarea>
+              <input
+                className="ProfilePanel-usercomment-body-numpicker"
+                type="number"
+                placeholder="7.0"
+                step="0.5"
+                name="userrating"
+                min="0"
+                max="10"
+              ></input>
+            </form>
+            <button className="ProfilePanel-usercomment-body-button fa fa-comment-o"></button>
+          </div>
         </div>
+
         <div className="ProfilePanel-userreviews-container">
           <div className="ProfilePanel-userreviews-column">
             <UserComment
