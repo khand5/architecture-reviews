@@ -1,0 +1,29 @@
+.ObjSummaryPanel-container {
+  height: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  position: relative;
+
+  display: block;
+  margin: 1em auto;
+  background-color: bisque;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ObjSummaryPanel-container-img-container {
+  height: 200px;
+  background: url("https://images.alphacoders.com/511/511342.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: grey;
+}
+.ObjSummaryPanel-gac {
+  position: absolute;
+  color: bisque;
+  width: 100%;
+  bottom: 100px;
+}
+.ObjSummaryPanel-name {
+  font-size: 1.5em;
+  background: ;
+}
