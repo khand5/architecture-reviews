@@ -1,0 +1,28 @@
+.Sample-review {
+  background: burlywood;
+  margin-top: 10px;
+}
+
+.Sample-review-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Sample-review-body {
+  padding: 10px;
+  text-align: justify;
+}
+
+.UserComment-rating {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-align: center;
+  font-size: 1em;
+  color: grey;
+  height: "30px";
+  width: "30px";
+
+  background-color: "white";
+}

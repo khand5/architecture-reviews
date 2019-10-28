@@ -1,4 +1,5 @@
 import React from "react";
+import "./UserComment.css";
 
 // Properties:
 // review: string
@@ -16,7 +17,7 @@ class UserComment extends React.Component {
     return (
       <div>
         <div className="Sample-review">
-          <div className="Samiple-reivew-header">
+          <div className="Sample-review-header">
             <div
               style={{
                 backgroundImage: `url(https://randomuser.me/api/portraits/men/82.jpg)`,
@@ -41,6 +42,7 @@ class UserComment extends React.Component {
                 September 1st, 2019
               </span>
             </div>
+            <div className="UserComment-rating">8/10</div>
           </div>
           <div className="Sample-review-body">{this.props.review}</div>
         </div>
