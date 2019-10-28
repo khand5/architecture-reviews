@@ -44,11 +44,12 @@ const images = [
   { src: cathedral18 }
 ];
 
-class ObjectPanel extends React.Component {
+class ObjectProfilePanel extends React.Component {
   constructor(props) {
     super(props);
     this.state = { modalIsOpen: false };
   }
+
   toggleModal = () => {
     this.setState(state => ({ modalIsOpen: !state.modalIsOpen }));
   };
@@ -60,8 +61,10 @@ class ObjectPanel extends React.Component {
       <div className="ProfilePanel-container">
         <div className="ProfilePanel-titlecontainer">
           <h1>The Canterbury Cathedral</h1>
+          <div>Location: Canterbury, Kent</div>
+          <div>Country: England</div>
+          <div>Denomination: Church of England</div>
         </div>
-
         <div className="ImageGallery-container">
           <div
             onClick={() => this.setState({ modalIsOpen: true })}
@@ -92,7 +95,6 @@ class ObjectPanel extends React.Component {
             className="ImageGallery-image"
           ></div>
         </div>
-
         <ModalGateway>
           {modalIsOpen ? (
             <Modal onClose={this.toggleModal}>
@@ -100,7 +102,6 @@ class ObjectPanel extends React.Component {
             </Modal>
           ) : null}
         </ModalGateway>
-
         <div className="ProfilePanel-data-container">
           <div className="ProfilePanel-review-title">
             <h3>Canterbury Cathedral: A Lorem Ipsum Architecture Review</h3>
@@ -152,26 +153,47 @@ class ObjectPanel extends React.Component {
               ornare ornare.
             </p>
           </div>
-          <div className="ProfilePanel-author-footer">
-            <p className="ProfilePanel-author-footer-item">
-              Authored by: Lorem Ipsum PEng., PhD, Masters Civil Design.
-            </p>
-            <p className="ProfilePanel-author-footer-item">
-              Review Score: ★★★★★
-            </p>
-            <p className="ProfilePanel-author-footer-item">
-              User Average Score: 9.87/10
-            </p>
+        </div>
+
+        <div className="ProfilePanel-summary-container">
+          <div className="ProfilePanel-summary-statbox">
+            <div className="ProfilePanel-summary-header">
+              Review Council Submission Lead
+            </div>
+            John Davis
+            <br />
+            P.Eng. PhD. MSc.
           </div>
-          <div className="ProfilePanel-author-footer-interactive">
-            <button className="ProfilePanel-author-footer-item-button fa fa-thumbs-up" />
-            <button className="ProfilePanel-author-footer-item-button fa fa-thumbs-down" />
-            <button className="ProfilePanel-author-footer-item-button fa fa-heart" />
-            <button className="ProfilePanel-author-footer-item-button fa fa-comment" />
+
+          <div className="ProfilePanel-summary-statbox">
+            <div className="ProfilePanel-summary-header">PRESERVATION:</div>
+            <div className="ProfilePanel-summary-body">98%</div>
+          </div>
+
+          <div className="ProfilePanel-summary-statbox">
+            <div className="ProfilePanel-summary-header">Public-OVERALL</div>
+            <div className="ProfilePanel-summary-body">93/100</div>
+          </div>
+
+          <div className="ProfilePanel-summary-rating-statbox">
+            <div className="ProfilePanel-summary-header">
+              GAC-PHENOMENON Rating
+            </div>
+            <div className="ProfilePanel-summary-body">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star-o"></span>
+              <span class="fa fa-star-o"></span>
+            </div>
           </div>
         </div>
+
         {/* GOOGLE MAPS CONTAINER */}
         <div className="ProfilePanel-gmapcontainer">
+          <div className="ProfilePanel-gmapcontainer-label">
+            COORDINATES: 51.2798° N, 1.0828° E
+          </div>
           <div className="ProfilePanel-gmapcanvas">
             <iframe
               title="GoogleMapsIFrame"
@@ -183,8 +205,22 @@ class ObjectPanel extends React.Component {
               scrolling="auto"
             ></iframe>
           </div>
+          <div className="ProfilePanel-gmapcontainer-label">
+            COORDINATES: 51.2798° N, 1.0828° E
+          </div>
         </div>
-
+        <div className="ProfilePanel-userreviews-interactive-container">
+          <form action="">
+            <textarea
+              type="textarea"
+              rows="4"
+              cols="150"
+              placeholder="Add public comment..."
+              className="ProfilePanel-userreviews-interactive-textarea"
+            ></textarea>
+          </form>
+          <button className="ProfilePanel-userreviews-interactive-comment-button fa fa-comment-o"></button>
+        </div>
         <div className="ProfilePanel-userreviews-container">
           <div className="ProfilePanel-userreviews-column">
             <UserComment
@@ -235,4 +271,4 @@ class ObjectPanel extends React.Component {
   }
 }
 
-export default ObjectPanel;
+export default ObjectProfilePanel;
