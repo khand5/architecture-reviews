@@ -1,10 +1,13 @@
 import React from "react";
+
+import LoginPanel from "../Panels/LoginPanel/LoginPanel";
 import "./Navbar.css";
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      loginHover: false,
       userIsLoggedIn: false
     };
   }
@@ -45,7 +48,22 @@ class Header extends React.Component {
           </div>
 
           <div className="Navbar-item-rating"></div>
-          <div className="Navbar-item Navbar-item-right Hover">Login</div>
+          <div
+            className="Navbar-item Navbar-item-right Hover"
+            onClick={() =>
+              this.setState({ loginHover: !this.state.loginHover })
+            }
+            style={{
+              background: this.state.loginHover ? "grey" : "none"
+            }}
+          >
+            Login
+          </div>
+          {this.state.loginHover && (
+            <div className="Navbar-login-panel">
+              <LoginPanel />
+            </div>
+          )}
         </div>
       </div>
     );

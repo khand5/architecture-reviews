@@ -5,6 +5,7 @@
 }
 
 .Navbar-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -112,6 +113,14 @@
 
 .Navbar-item-dropdown:hover .Navbar-item-dropdown-content {
   display: block;
+}
+
+.Navbar-login-panel {
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
 }
 
 /* Animations */

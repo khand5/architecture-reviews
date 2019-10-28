@@ -18,6 +18,10 @@
   margin: 0;
 }
 
+.Panel-forgotpassword-a {
+  font-size: 0.7em;
+}
+
 /* Cellphone screen */
 @media only screen and (max-width: 768px) {
 }

@@ -14,7 +14,13 @@ class LoginPanel extends React.Component {
         <p className="Panel-username-label">Username:</p>
         <input type="text" name="Username" />
         <p className="Panel-username-label">Password:</p>
-        <input type="text" name="Password" />
+        <input type="password" name="Password" /> <br />
+        <input type="submit" value="Register" />
+        <input type="submit" value="Login" />
+        <br />
+        <a className="Panel-forgotpassword-a" href="/forgotPassword">
+          Forgot Password?
+        </a>
       </div>
     );
   }
