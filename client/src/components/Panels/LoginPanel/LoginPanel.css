@@ -22,6 +22,11 @@
   font-size: 0.7em;
 }
 
+.Panel-error {
+  color: red;
+  font-size: 0.8em;
+}
+
 /* Cellphone screen */
 @media only screen and (max-width: 768px) {
 }
