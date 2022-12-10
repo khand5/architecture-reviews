@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/khand5/chess-online#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
